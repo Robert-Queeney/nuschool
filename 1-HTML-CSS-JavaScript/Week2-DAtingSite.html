@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        fieldset {border: 10px solid yellow; background: lightyellow; width: 720px; margin-bottom: 10px;}
+        label {width: 180px; display: inline-block;}
+    </style>
+</head>
+<body>
+    <h1>Please enter your deets for our dating website</h1>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Your Face</legend>
+            <label for="your face">Your Image:</label>
+            <input type="file"><br>
+            <span>Image Preview:</span><img id="preview"  label="Image Preview">
+        </fieldset>
+
+        <fieldset>
+            <legend>Your General Details</legend>
+            <label for="name">Your Name</label>
+            <input type="text" required name="name" id="name" label="name"><br>
+            <label for="gender">Gender:</label>
+            <input type="radio" required name="gender" id="female" value="Male">Male
+            <input type="radio" required name="gender" id="female" value="Female">Female<br>
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age"><br>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" name="dob" id="dob"><br>
+            <label for="color">Favorite Color:</label>
+            <input type="color" name="color" id="color" ><br>
+            <label for="country">Select Your Country:</label>
+            <select name="country" id="country">
+                <option value=""></option>
+                <option value="United States">United States</option>
+                <option value="Canada">Canada</option>
+                <option value="Mexico">Mexico</option>
+                <option value="Ukraine">Ukraine</option>
+                <option value="Russia">Russia</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Your Indicators</legend>
+            <label for="height">Height:</label>
+            <span>Short</span><input type="range" name="height" id="height" min="0" max="100">Tall<br>
+            <label for="salary">Salary:</label>
+            <span>0</span><input type="range" name="salary" id="salary" min="0" max="100">100
+        </fieldset>
+
+        <fieldset>
+            <legend>Your Contact Information</legend>
+            <label for="email">Email:</label>
+            <input type="email" required name="email" id="email"><br>
+            <label for="tel">Phone:</label>
+            <input type="tel" required name="tel" id="tel"><br>
+            <label for="address">Address:</label>
+            <textarea name="address" id="address" cols="20" rows="3"></textarea><br>
+            <label for="contact">Preferred method to contact:</label>
+            <input type="checkbox" name="contact" id="phone">Phone
+            <input type="checkbox" name="contact" id="email">E-mail
+            <input type="checkbox" name="contact" id="smoke">Smoke Signal
+        </fieldset>
+        <input type="submit">
+    </form>
+</body>
+</html>
